@@ -13,6 +13,10 @@
 		42FC50261E26765B00CF53A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FC50241E26765B00CF53A2 /* LaunchScreen.storyboard */; };
 		42FC50381E26776D00CF53A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC50311E26776D00CF53A2 /* AppDelegate.m */; };
 		42FC50391E26776D00CF53A2 /* UIViewController+CustomMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC50341E26776D00CF53A2 /* UIViewController+CustomMethods.m */; };
+		42FC503F1E267BC900CF53A2 /* PeopleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC503E1E267BC900CF53A2 /* PeopleListViewController.m */; };
+		42FC50421E267C5400CF53A2 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC50411E267C5400CF53A2 /* People.m */; };
+		42FC50481E267D5500CF53A2 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC50471E267D5500CF53A2 /* Event.m */; };
+		42FC504B1E268AC000CF53A2 /* PeopleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC504A1E268AC000CF53A2 /* PeopleTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		42FC50311E26776D00CF53A2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		42FC50331E26776D00CF53A2 /* UIViewController+CustomMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CustomMethods.h"; sourceTree = "<group>"; };
 		42FC50341E26776D00CF53A2 /* UIViewController+CustomMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CustomMethods.m"; sourceTree = "<group>"; };
+		42FC503D1E267BC900CF53A2 /* PeopleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleListViewController.h; sourceTree = "<group>"; };
+		42FC503E1E267BC900CF53A2 /* PeopleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleListViewController.m; sourceTree = "<group>"; };
+		42FC50401E267C5400CF53A2 /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		42FC50411E267C5400CF53A2 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		42FC50461E267D5500CF53A2 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		42FC50471E267D5500CF53A2 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		42FC50491E268AC000CF53A2 /* PeopleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleTableViewCell.h; sourceTree = "<group>"; };
+		42FC504A1E268AC000CF53A2 /* PeopleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +110,9 @@
 				42FC50301E26776D00CF53A2 /* AppDelegate.h */,
 				42FC50311E26776D00CF53A2 /* AppDelegate.m */,
 				42FC50321E26776D00CF53A2 /* Categories */,
-				42FC50351E26776D00CF53A2 /* Controllers */,
 				42FC50361E26776D00CF53A2 /* Models */,
 				42FC50371E26776D00CF53A2 /* Views */,
+				42FC50351E26776D00CF53A2 /* Controllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -117,6 +129,8 @@
 		42FC50351E26776D00CF53A2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				42FC503D1E267BC900CF53A2 /* PeopleListViewController.h */,
+				42FC503E1E267BC900CF53A2 /* PeopleListViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -124,6 +138,10 @@
 		42FC50361E26776D00CF53A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				42FC50401E267C5400CF53A2 /* People.h */,
+				42FC50411E267C5400CF53A2 /* People.m */,
+				42FC50461E267D5500CF53A2 /* Event.h */,
+				42FC50471E267D5500CF53A2 /* Event.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,6 +149,8 @@
 		42FC50371E26776D00CF53A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				42FC50491E268AC000CF53A2 /* PeopleTableViewCell.h */,
+				42FC504A1E268AC000CF53A2 /* PeopleTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,7 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FC50481E267D5500CF53A2 /* Event.m in Sources */,
+				42FC504B1E268AC000CF53A2 /* PeopleTableViewCell.m in Sources */,
 				42FC50381E26776D00CF53A2 /* AppDelegate.m in Sources */,
+				42FC503F1E267BC900CF53A2 /* PeopleListViewController.m in Sources */,
+				42FC50421E267C5400CF53A2 /* People.m in Sources */,
 				42FC50391E26776D00CF53A2 /* UIViewController+CustomMethods.m in Sources */,
 				42FC50181E26765B00CF53A2 /* main.m in Sources */,
 			);
