@@ -6,7 +6,7 @@
 //  Copyright © 2017 Roman Rybachenko. All rights reserved.
 //
 
-
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "People.h"
 
 #import "PeopleTableViewCell.h"
@@ -34,7 +34,10 @@
     _people = people;
     
     self.fullNameLabel.text = _people.fullName;
-#warning show parameters
+    NSURL *photoUrl = [NSURL URLWithString:_people.photoUrl];
+    [self.photoImageView sd_setImageWithURL:photoUrl placeholderImage:[UIImage imageNamed:@"circledUser"]];
+    self.genderLabel.text = [_people genderString];
+    self.dateLabel.text = [_people liveDateString];
 }
 
 

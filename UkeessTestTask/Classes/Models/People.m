@@ -7,6 +7,8 @@
 //
 
 
+#import "SharedDateFormatter.h"
+
 #import "People.h"
 
 @interface People ()
@@ -18,9 +20,10 @@
 #pragma mark - Interface methods
 
 - (NSString *)liveDateString {
-    NSString *str;
+    Event *birth = [self.events firstObject];
+    NSString *strBirth = [SharedDateFormatter getStringFromDate:birth.date withFormat:DATE_FORMAT_SHORT];
     
-    return str;
+    return strBirth;
 }
 
 - (NSString *)genderString {
