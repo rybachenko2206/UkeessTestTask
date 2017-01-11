@@ -21,9 +21,15 @@
 
 - (NSString *)liveDateString {
     Event *birth = [self.events firstObject];
-    NSString *strBirth = [SharedDateFormatter getStringFromDate:birth.date withFormat:DATE_FORMAT_SHORT];
+    NSString *dateStr = [SharedDateFormatter getStringFromDate:birth.date withFormat:DATE_FORMAT_SHORT];
     
-    return strBirth;
+    if (self.events.count > 1) {
+        Event *death = [self.events lastObject];
+        NSString *deathDateStr = [SharedDateFormatter getStringFromDate:death.date withFormat:DATE_FORMAT_SHORT];
+        dateStr = [NSString stringWithFormat:@"%@ - %@", dateStr, deathDateStr];
+    }
+    
+    return dateStr;
 }
 
 - (NSString *)genderString {
